@@ -1,0 +1,5 @@
+c:\users\roger\documents\visual studio 2017\Projects\LeetCodeChallenge\CommonBase\bin\Debug\CommonBase.dll
+c:\users\roger\documents\visual studio 2017\Projects\LeetCodeChallenge\CommonBase\bin\Debug\CommonBase.pdb
+c:\users\roger\documents\visual studio 2017\Projects\LeetCodeChallenge\CommonBase\obj\Debug\CommonBase.dll
+c:\users\roger\documents\visual studio 2017\Projects\LeetCodeChallenge\CommonBase\obj\Debug\CommonBase.pdb
+c:\users\roger\documents\visual studio 2017\Projects\LeetCodeChallenge\CommonBase\obj\Debug\CommonBase.csprojResolveAssemblyReference.cache
