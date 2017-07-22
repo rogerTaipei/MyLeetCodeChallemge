@@ -6,26 +6,26 @@ namespace CommonBase
 {
     public class EntryBase
     {
-        protected List<ICommonFunc> Funcs = null;
+        protected Dictionary<int, ICommonFunc> FuncTable = null;
 
         public EntryBase()
         {
-             Funcs = new List<ICommonFunc>();
+            FuncTable = new Dictionary<int, ICommonFunc>();
         }
 
-        public List<ICommonFunc> GetAllFunc()
+        public Dictionary<int, ICommonFunc> GetAllFunTable()
         {
-            return Funcs;
+            return FuncTable;
         }
 
         public List<string> GetAllFuncTitle()
         {
-            return Funcs.Select(_ => _.GetFuncTitle()).ToList();
+            return FuncTable.Select(_=>_.Value.GetFuncTitle()).ToList();
         }
 
         public List<string> GetAllFuncDesc()
         {
-            return Funcs.Select(_ => _.GetFuncDescription()).ToList();
+            return FuncTable.Select(_ => _.Value.GetFuncDescription()).ToList();
         }
     }
 }

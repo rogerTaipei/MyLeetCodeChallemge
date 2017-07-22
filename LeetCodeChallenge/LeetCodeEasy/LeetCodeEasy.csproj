@@ -40,8 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommonString.cs" />
     <Compile Include="Entry.cs" />
     <Compile Include="IntegerReverse.cs" />
+    <Compile Include="PalindromeNumber.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

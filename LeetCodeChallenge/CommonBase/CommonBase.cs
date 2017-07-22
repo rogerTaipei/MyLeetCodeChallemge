@@ -11,6 +11,7 @@ namespace CommonBase
         string GetFuncTitle();
         string GetFuncDescription();
         object GetUI();
+        object ExecuteCommand(object obj);
     }
 }
 

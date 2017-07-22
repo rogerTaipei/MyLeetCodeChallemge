@@ -28,6 +28,11 @@ namespace LeetCodeChallenge
             ChallengeEasy = new LeetCodeEasy.Entry();
 
             List<string> titles = ChallengeEasy.GetAllFuncTitle();
+
+
+            // you might transfer the return type default by yourself
+            int ret = (int)ChallengeEasy.ExecuteCommand(1234, LeetCodeEasy.FunctionIndex.IntegerReverse);
+            bool isPalindrome = (bool)ChallengeEasy.ExecuteCommand(34143, LeetCodeEasy.FunctionIndex.PalindromeNumber);
         }
     }
 }
