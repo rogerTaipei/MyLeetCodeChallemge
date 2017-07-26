@@ -34,3 +34,5 @@ D:\MyOwnGit\LeeCode\LeetCodeChallenge\LeetCodeChallenge\obj\Debug\LeetCodeChalle
 D:\MyOwnGit\LeeCode\LeetCodeChallenge\LeetCodeChallenge\obj\Debug\LeetCodeChallenge.csproj.GenerateResource.Cache
 D:\MyOwnGit\LeeCode\LeetCodeChallenge\LeetCodeChallenge\obj\Debug\LeetCodeChallenge.exe
 D:\MyOwnGit\LeeCode\LeetCodeChallenge\LeetCodeChallenge\obj\Debug\LeetCodeChallenge.pdb
+D:\MyOwnGit\LeeCode\LeetCodeChallenge\LeetCodeChallenge\bin\Debug\LeetCodeMedium.dll
+D:\MyOwnGit\LeeCode\LeetCodeChallenge\LeetCodeChallenge\bin\Debug\LeetCodeMedium.pdb

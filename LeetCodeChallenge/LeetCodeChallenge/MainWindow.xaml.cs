@@ -21,11 +21,13 @@ namespace LeetCodeChallenge
     public partial class MainWindow : Window
     {
         LeetCodeEasy.Entry ChallengeEasy;
+        LeetCodeMedium.Entry ChallengeMedium;
         public MainWindow()
         {
             InitializeComponent();
 
             ChallengeEasy = new LeetCodeEasy.Entry();
+            ChallengeMedium = new LeetCodeMedium.Entry();
 
             List<string> titles = ChallengeEasy.GetAllFuncTitle();
 
@@ -37,6 +39,8 @@ namespace LeetCodeChallenge
             //MMMCMXCIX = 3999
             //int r = (int)ChallengeEasy.ExecuteCommand("DCXXI", LeetCodeEasy.FunctionIndex.RomanToInteger);
             bool ret = (bool)ChallengeEasy.ExecuteCommand("()", LeetCodeEasy.FunctionIndex.ValidParentheses);
+
+            object ret2 = ChallengeMedium.ExecuteCommand(null, LeetCodeMedium.FunctionIndex.RemoveNthFromEnd);
         }
     }
 }

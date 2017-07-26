@@ -102,6 +102,10 @@
       <Project>{a2b67603-c5f6-4d5e-8332-f692da5f8d33}</Project>
       <Name>LeetCodeEasy</Name>
     </ProjectReference>
+    <ProjectReference Include="..\LeetCodeMedium\LeetCodeMedium.csproj">
+      <Project>{aed91c0c-8bda-4c4b-8603-aab6345d668d}</Project>
+      <Name>LeetCodeMedium</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
