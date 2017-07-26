@@ -15,10 +15,12 @@ namespace LeetCodeEasy
             integerReverse = new IntegerReverse();
             palindromeNumber = new PalindromeNumber();
             romanToInteger = new RomanToInteger();
+            validParentheses = new ValidParentheses();
 
             FuncTable.Add((int)FunctionIndex.IntegerReverse, integerReverse);
             FuncTable.Add((int)FunctionIndex.PalindromeNumber, palindromeNumber);
-            FuncTable.Add((int)FunctionIndex.RomanToInteger, romanToInteger); 
+            FuncTable.Add((int)FunctionIndex.RomanToInteger, romanToInteger);
+            FuncTable.Add((int)FunctionIndex.ValidParentheses, validParentheses);
         }
 
         public object ExecuteCommand(object input, FunctionIndex index)
@@ -30,12 +32,14 @@ namespace LeetCodeEasy
         IntegerReverse integerReverse;
         PalindromeNumber palindromeNumber;
         RomanToInteger romanToInteger;
+        ValidParentheses validParentheses;
     }
 
     public enum FunctionIndex
     {
         IntegerReverse = 0,
         PalindromeNumber = 1,
-        RomanToInteger = 2
+        RomanToInteger = 2,
+        ValidParentheses = 3
     }
 }

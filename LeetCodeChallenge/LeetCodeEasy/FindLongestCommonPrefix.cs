@@ -9,7 +9,7 @@ namespace LeetCodeEasy
 {
     public class FindLongestCommonPrefix : ICommonFunc
     {
-        /// <param name="obj">input string, return int</param>
+        /// <param name="obj">input string[], return string</param>
         public object ExecuteCommand(object obj)
         {
             string[] input = (string[])obj;

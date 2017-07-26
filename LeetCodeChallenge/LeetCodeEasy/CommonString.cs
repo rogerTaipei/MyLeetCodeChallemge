@@ -52,10 +52,16 @@ There is a more generic way of solving this problem."; }
         {
             get { return @"Write a function to find the longest common prefix string amongst an array of strings."; }
         }
+        public static string ValidParenthesesDesc
+        {
+            get { return @"Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+                    The brackets must close in the correct order, '()' and '()[]{ }' are all valid but '(]' and '([)]' are not."; }
+        }
 
         public static string IntegerReverseTitle = "7 Reverse Integer";
         public static string PalindromeNumberTitle = "Palindrome Number";
         public static string RomanToInteger = "13. Roman to Integer";
         public static string LongestCommonPrefix = "14. Longest Common Prefix";
+        public static string ValidParentheses = "20. Valid Parentheses";
     }
 }
