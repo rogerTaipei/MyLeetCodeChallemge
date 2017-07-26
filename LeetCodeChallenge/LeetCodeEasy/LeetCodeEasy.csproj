@@ -45,6 +45,7 @@
     <Compile Include="IntegerReverse.cs" />
     <Compile Include="PalindromeNumber.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RomanToInteger.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CommonBase\CommonBase.csproj">

@@ -14,9 +14,11 @@ namespace LeetCodeEasy
         {
             integerReverse = new IntegerReverse();
             palindromeNumber = new PalindromeNumber();
+            romanToInteger = new RomanToInteger();
 
             FuncTable.Add((int)FunctionIndex.IntegerReverse, integerReverse);
             FuncTable.Add((int)FunctionIndex.PalindromeNumber, palindromeNumber);
+            FuncTable.Add((int)FunctionIndex.RomanToInteger, romanToInteger); 
         }
 
         public object ExecuteCommand(object input, FunctionIndex index)
@@ -27,11 +29,13 @@ namespace LeetCodeEasy
         
         IntegerReverse integerReverse;
         PalindromeNumber palindromeNumber;
+        RomanToInteger romanToInteger;
     }
 
     public enum FunctionIndex
     {
         IntegerReverse = 0,
-        PalindromeNumber = 1
+        PalindromeNumber = 1,
+        RomanToInteger = 2
     }
 }

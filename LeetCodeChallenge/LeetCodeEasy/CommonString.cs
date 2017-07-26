@@ -29,7 +29,6 @@ For the purpose of this problem, assume that your function returns 0 when the re
 Note:
 The input is assumed to be a 32-bit signed integer. Your function should return 0 when the reversed integer overflows."; }
         }
-
         public static string PalindromeNumberDesc
         {
             get { return @"Determine whether an integer is a palindrome. Do this without extra space.
@@ -45,8 +44,18 @@ You could also try reversing an integer. However, if you have solved the problem
 
 There is a more generic way of solving this problem."; }
         }
+        public static string RomanToIntegerDesc
+        {
+            get { return @"Given a roman numeral, convert it to an integer. Input is guaranteed to be within the range from 1 to 3999."; }
+        }
+        public static string LongestCommonPrefixDesc
+        {
+            get { return @"Write a function to find the longest common prefix string amongst an array of strings."; }
+        }
 
-        public static string PalindromeNumberTitle = "Palindrome Number";
         public static string IntegerReverseTitle = "7 Reverse Integer";
+        public static string PalindromeNumberTitle = "Palindrome Number";
+        public static string RomanToInteger = "13. Roman to Integer";
+        public static string LongestCommonPrefix = "14. Longest Common Prefix";
     }
 }
