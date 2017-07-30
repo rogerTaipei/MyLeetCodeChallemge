@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="CommonString.cs" />
     <Compile Include="Entry.cs" />
+    <Compile Include="IntegerToRoman.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RemoveNthFromEnd.cs" />
   </ItemGroup>

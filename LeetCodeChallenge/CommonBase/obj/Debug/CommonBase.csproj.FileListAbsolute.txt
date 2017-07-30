@@ -7,3 +7,4 @@ D:\MyOwnGit\LeeCode\LeetCodeChallenge\CommonBase\bin\Debug\CommonBase.dll
 D:\MyOwnGit\LeeCode\LeetCodeChallenge\CommonBase\bin\Debug\CommonBase.pdb
 D:\MyOwnGit\LeeCode\LeetCodeChallenge\CommonBase\obj\Debug\CommonBase.dll
 D:\MyOwnGit\LeeCode\LeetCodeChallenge\CommonBase\obj\Debug\CommonBase.pdb
+D:\MyOwnGit\LeeCode\LeetCodeChallenge\CommonBase\obj\Debug\CommonBase.csprojResolveAssemblyReference.cache

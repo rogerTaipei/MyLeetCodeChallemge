@@ -22,6 +22,14 @@ Given n will always be valid.
 Try to do this in one pass."; }
         }
 
+        public static string IntegerToRomanDesc
+        {
+            get { return @"Given an integer, convert it to a roman numeral.
+
+Input is guaranteed to be within the range from 1 to 3999."; }
+        }
+
+        public static string IntegerToRoman = "12. Integer to Roman";
         public static string RemoveNthFromEnd = "19. Remove Nth Node From End of List";
     }
 }
