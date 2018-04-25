@@ -1,4 +1,4 @@
-*.exe
+*/.vs *.exe
 Thumbs.db
 *.user
 *.aps
@@ -16,3 +16,4 @@ Thumbs.db
 [Dd]ebug*/
 *.sbr
 obj/
+*.pdb *.dll
