@@ -13,7 +13,10 @@ namespace LeetCodeMedium
             : base()
         {
             removeNthFromEnd = new RemoveNthFromEnd();
+            integerToRoman = new IntegerToRoman();
+
             FuncTable.Add((int)FunctionIndex.RemoveNthFromEnd, removeNthFromEnd);
+            FuncTable.Add((int)FunctionIndex.IntegerToRoman, integerToRoman);
         }
 
         public object ExecuteCommand(object input, FunctionIndex index)
@@ -23,10 +26,12 @@ namespace LeetCodeMedium
         }
 
         RemoveNthFromEnd removeNthFromEnd;
+        IntegerToRoman integerToRoman;
     }
 
     public enum FunctionIndex
     {
-        RemoveNthFromEnd = 0
+        RemoveNthFromEnd = 0,
+        IntegerToRoman = 1
     }
 }

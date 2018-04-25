@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CommonBase;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -31,6 +32,8 @@ namespace LeetCodeChallenge
 
             List<string> titles = ChallengeEasy.GetAllFuncTitle();
 
+            InitUIElements(this.EasyList, ChallengeEasy);
+            InitUIElements(this.MediumList, ChallengeMedium);
 
             // you might transfer the return type default by yourself
             //int ret = (int)ChallengeEasy.ExecuteCommand(1234, LeetCodeEasy.FunctionIndex.IntegerReverse);
@@ -38,9 +41,46 @@ namespace LeetCodeChallenge
 
             //MMMCMXCIX = 3999
             //int r = (int)ChallengeEasy.ExecuteCommand("DCXXI", LeetCodeEasy.FunctionIndex.RomanToInteger);
-            bool ret = (bool)ChallengeEasy.ExecuteCommand("()", LeetCodeEasy.FunctionIndex.ValidParentheses);
+            //bool ret = (bool)ChallengeEasy.ExecuteCommand("()", LeetCodeEasy.FunctionIndex.ValidParentheses);
 
-            object ret2 = ChallengeMedium.ExecuteCommand(null, LeetCodeMedium.FunctionIndex.RemoveNthFromEnd);
+            //object ret2 = ChallengeMedium.ExecuteCommand(null, LeetCodeMedium.FunctionIndex.RemoveNthFromEnd);
+
+            //object ret3 = ChallengeEasy.ExecuteCommand(null, LeetCodeEasy.FunctionIndex.MergeTwoSortedArray);
         }
+
+        private void InitUIElements(UIElement _element, CommonBase.EntryBase _targetObj)
+        {
+            StackPanel tempPanel = _element as StackPanel;
+
+            var fTable = _targetObj.GetAllFunTable();
+            var fTitles = _targetObj.GetAllFuncTitle().ToArray();
+            var fDescriptions = _targetObj.GetAllFuncDesc().ToArray();
+
+            for (int i = 0;  i < fTable.Count; ++i)
+            {
+                ArgClass arg = new ArgClass()
+                {
+                    Function = fTable[i],
+                    Title = fTitles[i],
+                    Description = fDescriptions[i]
+                };
+                Button temp = new Button();
+                temp.Content = fTitles[i];
+                tempPanel.Children.Add(temp);
+                temp.Click += DefaultBtnClick;
+            }
+        }
+
+        protected void DefaultBtnClick(object sender, EventArgs e)
+        {
+            //TODO, need customize a new button with my own args
+        }
+    }
+
+    public class ArgClass : EventArgs
+    {
+        public ICommonFunc Function;
+        public string Title;
+        public string Description;
     }
 }

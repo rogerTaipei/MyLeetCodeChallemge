@@ -57,11 +57,19 @@ There is a more generic way of solving this problem."; }
             get { return @"Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
                     The brackets must close in the correct order, '()' and '()[]{ }' are all valid but '(]' and '([)]' are not."; }
         }
+        public static string MergeSortedArrayDesc
+        {
+            get { return @"Given two sorted integer arrays nums1 and nums2, merge nums2 into nums1 as one sorted array.
+
+Note:
+You may assume that nums1 has enough space (size that is greater or equal to m + n) to hold additional elements from nums2. The number of elements initialized in nums1 and nums2 are m and n respectively."; }
+        }
 
         public static string IntegerReverseTitle = "7 Reverse Integer";
         public static string PalindromeNumberTitle = "Palindrome Number";
         public static string RomanToInteger = "13. Roman to Integer";
         public static string LongestCommonPrefix = "14. Longest Common Prefix";
         public static string ValidParentheses = "20. Valid Parentheses";
+        public static string MergeSortedArray = "88. Merge Sorted Array";
     }
 }
