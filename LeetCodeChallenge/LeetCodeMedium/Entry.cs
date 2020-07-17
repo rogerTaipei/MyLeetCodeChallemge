@@ -14,9 +14,11 @@ namespace LeetCodeMedium
         {
             removeNthFromEnd = new RemoveNthFromEnd();
             integerToRoman = new IntegerToRoman();
+            deleteColumnsMakeSorted = new DeleteColumnsMakeSorted();
 
             FuncTable.Add((int)FunctionIndex.RemoveNthFromEnd, removeNthFromEnd);
             FuncTable.Add((int)FunctionIndex.IntegerToRoman, integerToRoman);
+            FuncTable.Add((int)FunctionIndex.DeleteColumnsMakeSorted, deleteColumnsMakeSorted);
         }
 
         public object ExecuteCommand(object input, FunctionIndex index)
@@ -27,11 +29,13 @@ namespace LeetCodeMedium
 
         RemoveNthFromEnd removeNthFromEnd;
         IntegerToRoman integerToRoman;
+        DeleteColumnsMakeSorted deleteColumnsMakeSorted;
     }
 
     public enum FunctionIndex
     {
         RemoveNthFromEnd = 0,
-        IntegerToRoman = 1
+        IntegerToRoman = 1,
+        DeleteColumnsMakeSorted = 2
     }
 }

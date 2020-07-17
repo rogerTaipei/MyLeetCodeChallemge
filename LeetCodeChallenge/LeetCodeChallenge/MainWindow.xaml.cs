@@ -46,6 +46,8 @@ namespace LeetCodeChallenge
             //object ret2 = ChallengeMedium.ExecuteCommand(null, LeetCodeMedium.FunctionIndex.RemoveNthFromEnd);
 
             //object ret3 = ChallengeEasy.ExecuteCommand(null, LeetCodeEasy.FunctionIndex.MergeTwoSortedArray);
+
+            int temp = (int)ChallengeMedium.ExecuteCommand(new string[] { "abcdef", "uvwxyz" }, LeetCodeMedium.FunctionIndex.DeleteColumnsMakeSorted);
         }
 
         private void InitUIElements(UIElement _element, CommonBase.EntryBase _targetObj)
