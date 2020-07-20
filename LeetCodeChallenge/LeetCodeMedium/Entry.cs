@@ -15,10 +15,12 @@ namespace LeetCodeMedium
             removeNthFromEnd = new RemoveNthFromEnd();
             integerToRoman = new IntegerToRoman();
             deleteColumnsMakeSorted = new DeleteColumnsMakeSorted();
+            minCoinChallenge = new MinCoinChallenge();
 
             FuncTable.Add((int)FunctionIndex.RemoveNthFromEnd, removeNthFromEnd);
             FuncTable.Add((int)FunctionIndex.IntegerToRoman, integerToRoman);
             FuncTable.Add((int)FunctionIndex.DeleteColumnsMakeSorted, deleteColumnsMakeSorted);
+            FuncTable.Add((int)FunctionIndex.MinCoinChallenge, minCoinChallenge);
         }
 
         public object ExecuteCommand(object input, FunctionIndex index)
@@ -30,12 +32,14 @@ namespace LeetCodeMedium
         RemoveNthFromEnd removeNthFromEnd;
         IntegerToRoman integerToRoman;
         DeleteColumnsMakeSorted deleteColumnsMakeSorted;
+        MinCoinChallenge minCoinChallenge;
     }
 
     public enum FunctionIndex
     {
         RemoveNthFromEnd = 0,
         IntegerToRoman = 1,
-        DeleteColumnsMakeSorted = 2
+        DeleteColumnsMakeSorted = 2,
+        MinCoinChallenge = 3
     }
 }

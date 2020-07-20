@@ -47,7 +47,15 @@ namespace LeetCodeChallenge
 
             //object ret3 = ChallengeEasy.ExecuteCommand(null, LeetCodeEasy.FunctionIndex.MergeTwoSortedArray);
 
-            int temp = (int)ChallengeMedium.ExecuteCommand(new string[] { "abcdef", "uvwxyz" }, LeetCodeMedium.FunctionIndex.DeleteColumnsMakeSorted);
+            //int temp = (int)ChallengeMedium.ExecuteCommand(new string[] { "abcdef", "uvwxyz" }, LeetCodeMedium.FunctionIndex.DeleteColumnsMakeSorted);
+
+            int solution = (int)ChallengeMedium.ExecuteCommand(
+                new LeetCodeMedium.MinCoinChallenge.CoinParam()
+                {
+                    Amount = 11,
+                    Coins = new int[] { 1, 2, 5 }
+                }, 
+                LeetCodeMedium.FunctionIndex.MinCoinChallenge);
         }
 
         private void InitUIElements(UIElement _element, CommonBase.EntryBase _targetObj)

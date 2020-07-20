@@ -42,8 +42,20 @@ Suppose we chose a set of deletion indices D such that after deletions, each rem
 Return the minimum possible value of D.length."; }
         }
 
+        public static string MinCoinChallengeDesc
+        {
+            get
+            {
+                return @"You are given coins of different denominations and a total amount of money amount. Write a function to compute the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return -1.
+Input: coins = [1, 2, 5], amount = 11
+Output: 3 
+Explanation: 11 = 5 + 5 + 1";
+            }
+        }
+
         public static string IntegerToRoman = "12. Integer to Roman";
         public static string RemoveNthFromEnd = "19. Remove Nth Node From End of List";
         public static string DeleteColumnsMakeSorted = "944. Delete Columns to Make Sorted";
+        public static string MinCoinChallenge = "322. Coin Change";
     }
 }
